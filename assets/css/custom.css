@@ -1,0 +1,161 @@
+
+:root {
+    --brand-primary: #146c85;
+    --brand-dark: #102a43;
+    --brand-light: #eef7fa;
+    --brand-accent: #20a4a9;
+    --brand-text: #25364a;
+    --brand-radius: 16px;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: var(--brand-text);
+    background-color: #ffffff;
+}
+
+.navbar {
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.navbar-brand {
+    color: var(--brand-primary);
+}
+
+.navbar-brand:hover {
+    color: var(--brand-dark);
+}
+
+.nav-link {
+    font-weight: 500;
+}
+
+.btn {
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background-color: var(--brand-primary);
+    border-color: var(--brand-primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--brand-dark);
+    border-color: var(--brand-dark);
+}
+
+.btn-outline-primary {
+    color: var(--brand-primary);
+    border-color: var(--brand-primary);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--brand-primary);
+    border-color: var(--brand-primary);
+}
+
+.card {
+    border: 1px solid #e4ebf1;
+    border-radius: var(--brand-radius);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(16, 42, 67, 0.1);
+}
+
+.pricing-section {
+    min-height: 85vh;
+    background: linear-gradient(180deg, #eef7fa, #ffffff);
+}
+
+.pricing-card {
+    background-color: #ffffff;
+}
+
+.pricing-card ul li {
+    color: #45566a;
+}
+
+.featured-plan {
+    border: 2px solid var(--brand-primary);
+    background-color: #f5fbfd;
+}
+
+.featured-plan .badge {
+    font-size: 0.8rem;
+    padding: 8px 12px;
+}
+
+.dashboard-sidebar {
+    background-color: var(--brand-dark);
+    color: #ffffff;
+}
+
+.dashboard-sidebar .nav-link {
+    color: #d7e5ee;
+    border-radius: 8px;
+    padding: 12px 16px;
+}
+
+.dashboard-sidebar .nav-link:hover,
+.dashboard-sidebar .nav-link.active {
+    color: #ffffff;
+    background-color: var(--brand-primary);
+}
+
+.dashboard-main {
+    min-height: 85vh;
+    background-color: #f5f8fb;
+}
+
+.kpi-card {
+    background-color: #ffffff;
+}
+
+.kpi-card h3 {
+    color: var(--brand-primary);
+}
+
+.table th {
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.table-responsive {
+    border-radius: var(--brand-radius);
+}
+
+@media (min-width: 992px) {
+    .dashboard-sidebar {
+        min-height: calc(100vh - 80px);
+    }
+}
+
+@media (max-width: 767.98px) {
+    .pricing-section {
+        padding-top: 35px;
+    }
+
+    .dashboard-main {
+        padding: 20px;
+    }
+
+    .display-5 {
+        font-size: 2rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .card {
+        transition: none;
+    }
+}
