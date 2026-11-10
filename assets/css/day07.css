@@ -1,0 +1,94 @@
+
+.day07-hero {
+    background: linear-gradient(135deg, #eef7fa, #ffffff);
+}
+
+.hero-description {
+    max-width: 650px;
+}
+
+.feature-icon {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    background-color: #e4f2f6;
+    color: #146c85;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.offcanvas {
+    max-width: 85vw;
+}
+
+.offcanvas-title {
+    color: #146c85;
+}
+
+.offcanvas .nav-link {
+    color: #25364a;
+    padding: 12px 16px;
+    border-radius: 8px;
+}
+
+.offcanvas .nav-link:hover,
+.offcanvas .nav-link.active {
+    background-color: #e4f2f6;
+    color: #146c85;
+}
+
+.faq-section {
+    background-color: #f5f8fb;
+}
+
+.faq-container {
+    max-width: 850px;
+}
+
+.accordion-item {
+    border-color: #e0e9ef;
+}
+
+.accordion-button {
+    font-weight: 600;
+    padding: 20px;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #e4f2f6;
+    color: #102a43;
+    box-shadow: none;
+}
+
+.accordion-button:focus-visible {
+    box-shadow: 0 0 0 3px rgba(20, 108, 133, 0.3);
+}
+
+.modal-content {
+    border: none;
+    border-radius: 16px;
+}
+
+.modal-header {
+    background-color: #f5f8fb;
+    border-radius: 16px 16px 0 0;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #146c85;
+    box-shadow: 0 0 0 3px rgba(20, 108, 133, 0.15);
+}
+
+@media (max-width: 767.98px) {
+    .day07-hero h1 {
+        font-size: 2.1rem;
+    }
+
+    .accordion-button {
+        padding: 16px;
+    }
+}
